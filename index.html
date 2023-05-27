@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+      <title>Affiliate marketing</title>
+      
+      <style type="text/css" media="all">
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+         }
+         
+         body {
+            background: black;
+         }
+      
+         timer {
+            text-align: center;
+            padding: 2rem 0;
+            width: min(400px, 95%);
+            margin: 2.5rem auto;
+            background-color: #7a7a7a46;
+            border-radius: 10px;
+         }
+
+         .timer span {
+             font-size: 1.5rem;
+             margin: 0 5px;
+         }
+
+         .timer span, .timer small {
+             color: red;
+         }
+
+         .add4 {
+            margin: 2rem auto;
+            width: min(100%, 600px);
+         }
+
+         iframe {
+             background-color: #eee;
+             width: min(100%, 700px);
+             box-shadow: 0 0 10px #252525;
+             margin: 0;
+         }
+
+      </style>
+   </head>
+   <body>
+            <div class="added" style="padding: 4rem 3px">
+          <div class="add1"
+       style="width: 100%;
+       font-size: 1.5rem;
+       color: red;
+       font-weight: 600;
+       text-align: center;
+       margin: 1.5rem 0;
+       text-transform: uppercase;
+       ">
+             This video will be taken down in !
+            <div class="timer">
+                <h3><span>2<small>days</small></span><span>5<small>hrs</small></span><span>0<small>min</small></span> <span>0<small>sec</small></span></h3>
+            </div>
+          </div>
+          <div class="add6">
+             <h2 style="
+             text-align:center;
+             margin-top:5rem;
+             font-weight:500;
+             color:#2ecc71;
+             ">
+                How I was able to generate over $2000 within my first 3 months
+             </h2>
+          </div>
+          <div class="add2"
+          style="
+          padding: 1rem;
+          line-height: 1.8rem;
+          font-weight: 600;
+          text-align: center;
+          color: #3498db;
+          font-size: 1rem
+          "
+          >
+            I am Ugochukwu-Ekeh Helen
+
+            I'm a Digital Entrepreneur, an Affiliate marketer who has generated over $2000 in sales for myself and my over 300 students in the last 3 months,
+
+           My goal is to help you harness the power of the internet legitimately to make lots of money for yourself using your smartphone even if you are a complete beginner!
+
+        </div>
+        <div class="add3"
+        style="
+        text-align: center;
+        margin: 3rem 1rem;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: red;
+        "
+        >
+           Finally exposed for the first time ever
+        </div>
+        <div class="add4">
+           <p
+           style="
+           font-size:1rem;
+           text-align:center;
+           line-height:2rem;
+           color:#3498db;
+           font-weight:600;
+           "
+           >
+              watch this video all the way to the end. I have a special gift worth $100 for you.
+           </p>
+           
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/Dl7Yig2U3hA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+       </div>
+        
+        <script type="text/javascript" charset="utf-8">
+           const countdown = document.querySelector('.timer');
+           let days = 2; 
+           let hrs = 0;
+           let min = 0;
+           let sec = 0;
+
+function createCountDown() {
+    let f = Date.parse('Dec 30, 2092 01:30:00')
+    let n = new Date()
+    let diff = f-n
+
+    sec = Math.floor(diff/1000);
+    min = Math.floor(diff/(1000*60));
+    hrs = Math.floor(diff/(1000*60*60));
+    days = Math.floor(diff/(1000*60*60*24));
+
+    let h = hrs - days * 24;
+    let m = min - hrs * 60;
+    let s = sec - min * 60;
+
+    countdown.innerHTML = `<h3><span>2<small>days</small></span><span>${h}<small>hrs</small></span><span>${m}<small>min</small></span><span>${s}<small>sec</small></span></h3>`;
+}
+
+       setInterval(() => {
+           createCountDown()
+       }, 1000);
+
+        </script>
+        
+   </body>
+</html>
